@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import AuthProvider from './Pages/Components/AuthProvider';
-import PrivateRoute from './Pages/Components/PrivateRoute';
+import AuthProvider from './Components/AuthProvider';
+import PrivateRoute from './Components/PrivateRoute';
 
 import Login from './Pages/Login';
 import Dashboard from './Pages/Dashboard';

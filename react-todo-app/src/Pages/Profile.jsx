@@ -1,5 +1,5 @@
-import Publicacion from "./Components/Publicacion.jsx";
-import HeadDashboard from './Components/HeadDashboard.jsx';
+import Publicacion from "../Components/Publicacion.jsx";
+import HeadDashboard from '../Components/HeadDashboard.jsx';
 
 const Profile = () => {
     

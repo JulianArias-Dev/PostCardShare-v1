@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useAuth } from "./Components/AuthProvider.jsx";
-import NavBar from "./Components/NavBar.jsx";
+import { useAuth } from "../Components/AuthProvider.jsx";
+import NavBar from "../Components/NavBar.jsx";
 import './singup.css';
 
 const Register = () => {
@@ -11,7 +11,7 @@ const Register = () => {
         password: "",
     });
     
-    //const [mensaje, setMesaje] = useState("");
+    const [mensaje, setMesaje] = useState("");
     //*/
 
     const auth = useAuth();
@@ -48,11 +48,11 @@ const Register = () => {
 
         if (status === "view") {
             passwordField.type = "text";
-            button.src = "src/assets/hide.png";
+            button.src = "src/assets/Login/hide.png";
             setStatus("hide");
         } else {
             passwordField.type = "password";
-            button.src = "src/assets/view.png";
+            button.src = "src/assets/Login/view.png";
             setStatus("view");
         }
     };
@@ -113,7 +113,7 @@ const Register = () => {
                             <img
                                 className="eye"
                                 id="btnVerContraseña"
-                                src={status === "view" ? "src/assets/view.png" : "src/assets/hide.png"}
+                                src={status === "view" ? "src/assets/Login/view.png" : "src/assets/Login/hide.png"}
                                 alt=""
                                 onClick={verContraseña}
                             />

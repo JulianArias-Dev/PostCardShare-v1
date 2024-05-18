@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { useAuth } from "./Components/AuthProvider.jsx";
-import NavBar from "./Components/NavBar.jsx";
+import { useAuth } from "../Components/AuthProvider.jsx";
+import NavBar from "../Components/NavBar.jsx";
 import './styles.css';
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
 
@@ -37,11 +37,11 @@ const Login = () => {
 
     if (status === "view") {
       passwordField.type = "text";
-      button.src = "src/assets/hide.png";
+      button.src = "src/assets/Login/hide.png";
       setStatus("hide");
     } else {
       passwordField.type = "password";
-      button.src = "src/assets/view.png";
+      button.src = "src/assets/Login/view.png";
       setStatus("view");
     }
   };
@@ -95,7 +95,7 @@ const Login = () => {
               <img
                 className="eye"
                 id="btnVerContraseña"
-                src={status === "view" ? "src/assets/view.png" : "src/assets/hide.png"}
+                src={status === "view" ? "src/assets/Login/view.png" : "src/assets/Login/hide.png"}
                 alt=""
                 onClick={verContraseña}
               />

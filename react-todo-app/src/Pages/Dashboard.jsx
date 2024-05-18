@@ -1,11 +1,10 @@
-import ActiveUser from './Components/ActiveUser.jsx';
-import Publicacion from './Components/Publicacion.jsx';
-import HeadDashboard from './Components/HeadDashboard.jsx';
+import ActiveUser from '../Components/ActiveUser.jsx';
+import Publicacion from '../Components/Publicacion.jsx';
+import HeadDashboard from '../Components/HeadDashboard.jsx';
 import './Dashboard.css';
-//import { Link } from 'react-router-dom';
-import Anuncio from './Components/Anuncio.jsx';
-import Anuncio1 from '../assets/Anuncio1.png';
-import Anuncio2 from '../assets/Anuncio2.png';
+import Anuncio from '../Components/Anuncio.jsx';
+import Anuncio1 from '../assets/Anuncios/Anuncio1.png';
+import Anuncio2 from '../assets/Anuncios/Anuncio2.png';
 
 
 const Dashboard = () => {
