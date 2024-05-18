@@ -1,0 +1,245 @@
+/*profile styles*/
+.profile {
+    display: flex;
+    padding: 1%;
+    width: 98%;
+    background-color: #FFF9D0;
+    margin-top: 1%;
+    flex-direction: column;
+    height: 100cv;
+    overflow-y: auto;
+    font-family: 'Georgia', Arial, sans-serif;
+}
+
+.userabout {
+    padding: 1%;
+    margin-left: 0px;
+    display: flex;
+    justify-content: left;
+    border: 2px solid #000;
+    border-radius: 20px;
+    width: 97%;
+    height: 25%;
+    margin-bottom: 1.1%;
+}
+
+.userabout img {
+    width: 15%;
+    height: 95%;
+}
+
+.userabout div {
+    margin-left: 2%;
+    height: 97%;
+    width: 83%;
+}
+
+.userabout div h1 {
+    font-size: 190%;
+}
+
+.userabout div span {
+    font-size: 120%;
+}
+
+.publicaciones {
+    width: 97%;
+    padding: 0.5%;
+    height: 100cv;
+}
+
+.publicacion {
+    height: 100cv;
+    padding: 1%;
+    margin: 2%;
+    display: flex;
+    justify-content: left;
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 95%;
+}
+
+.publicacion h4 {
+    cursor: pointer;
+    margin: 0%;
+}
+
+.publicacion h4:hover{
+    text-decoration: underline;
+}
+
+.publicacion p{
+    margin-bottom: 0.5%;
+    margin-top: 0.3%;
+}
+
+.publicacion div {
+    height: 100cv;
+    padding-left: 2%;
+}
+
+.star {
+    height: 15%;
+    width: 2%;
+}
+
+.photo {
+    height: 40%;
+    width: 10%;
+}
+
+.like {
+    cursor: pointer;
+    height: 15%;
+    width: 2%;
+    margin: 0 1%;
+}
+
+.activeuser{
+    margin-top: 2.5%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50px;
+    border-bottom: 2px solid #FFF9D0;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.activeuser img{
+    cursor: pointer;
+    height: 90%;
+    width: 24%;
+}
+
+.activeuser h5{
+    cursor: pointer;
+    margin-left: 5%;
+}
+
+.activeuser h5:hover{
+    text-decoration:underline;
+}
+
+  /*styles dashboard*/
+.dash_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 3px;
+    background-color: #5AB2FF;
+    color: #fff;
+    width: 99.85%;
+}
+
+.new_name {
+    display: flex;
+    align-items: center;
+}
+
+.new_name img {
+    width: 7%;
+    height: 95%;
+    cursor: pointer;
+}
+
+.logout {
+    width: 100cv;
+    display: flex;
+    justify-content: center; 
+}
+
+.logout img{
+    padding: 0.5% 0.5%;
+}
+
+.logout img:hover {
+    background-color: #8ECAFF;
+  }
+
+.new_name img:hover{
+    background-color:#8ECAFF;
+}
+
+.dash_nav {
+    display: flex;
+    align-items: center;
+}
+
+.dash_nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dash_nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.dash_nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.dash_nav ul li:hover {
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}
+
+.dash_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1%;
+    height: calc(100vh - 50px);
+    /* Altura total menos altura del header y del footer */
+}
+
+.dash_left-div {
+    display: flex;
+    width: 17%;
+    /* Tamaño de los divs laterales */
+    background-color: #A0DEFF;
+    margin-right: 0.1%;
+    height: 100%;
+    padding-left: 0.5%;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.dash_left-div h4{
+    margin: 2%;
+}
+
+.dash_right-div {
+    flex-direction: column;
+    display: flex;
+    color: #000;
+    width: 18%;
+    /* Tamaño de los divs laterales */
+    border-radius: 2px;
+    background-color: #a0deff4f;
+    margin-right: 0%;
+    margin-left: 0.1%;
+    height: 100%;
+    justify-content: center;
+}
+
+.dash_middle-div {
+    width: 65%;
+    height: 100cv;
+    /* Tamaño del div central */
+    background-color: #FFF9D0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1%;
+}
+
+.dash_footer {
+    height: 30px;
+    background-color: #5AB2FF;
+    color: #fff;
+    text-align: center;
+    padding: 0.1 0%;
+}

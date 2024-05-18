@@ -1,0 +1,229 @@
+/*styles login*/
+.login_contenedorPrincipal {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #000;
+    border-radius: 2%;
+    padding: 0.2%;
+    margin: 2%;
+    margin-left: 18%;
+    height: 450px;
+    width: 60%;
+}
+
+.login_contenedorImagen {
+    padding: 5%;
+    background-color: #5AB2FF;
+    flex-basis: 35%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.login_contenedorImagen span {
+    margin-left: 5%;
+    font-family: 'Georgia', Arial, sans-serif;
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.login_contenedorImagen img {
+    width: 70%;
+    height: 70%;
+    margin-top: 10%;
+    margin-left: 15%;
+    border-radius: 60%;
+}
+
+.login_contenedorFormulario {
+    flex-basis: 64%;
+    margin-left: 0%;
+    border-radius: 3%;
+}
+
+.login_contenedorFormulario form{
+    padding: 15%;
+    height: 100cv;
+}
+
+.singuplink{
+    text-decoration: none;
+    color: #5AB2FF;
+    margin: 35%;
+}
+
+.singuplink:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.login_boton {
+    margin-left: 8%;
+    height: 8%;
+    width: 80%;
+    padding: 4% 5%;
+    background-color: white;
+    color: black;
+    font-family: 'Tahoma', Arial, sans-serif;
+    font-size: 85%;
+    font-style: inherit;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+.login_boton:hover {
+    cursor: pointer;
+    background-color: #5AB2FF;
+    color: white;
+}
+
+.login-span {
+    font-family: 'Tahoma', Arial, sans-serif;
+    font-size: 90%;
+    font-style: inherit;
+}
+
+.spamMessage{   
+    font-size: 90%;
+    padding-left: 23%;
+    margin-bottom: 0%;
+    color: red;
+    text-decoration: underline  ;
+}
+
+.login-input {
+    font-family: 'Tahoma', Arial, sans-serif;
+    font-size: small;
+    width: 90%;
+    padding: 2.5% 2%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #5AB2FF;
+}
+
+/*styles homepage*/
+.homepage {
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    height: 100vh;
+    /* Ajusta la altura según sea necesario */
+}
+
+.homepage div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Alinea el contenido a la izquierda */
+    justify-content: flex-start;
+    /* Alinea el contenido arriba */
+    height: 750px;
+    background-color: #FFF9D0;
+    padding: 5%;
+}
+
+.homepage div h2 {
+    font-family: 'Courier New', monospace;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* Añade espacio entre h2 y span */
+}
+
+.homepage div span {
+    font-family: 'Courier New', monospace;
+    font-size: 30px;
+}
+
+.homepage div hr {
+    border: 1px solid #000;
+    width: 100%;
+}
+
+.images {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1%;
+    padding-top: 2%;
+    border: 2px solid #000;
+    border-radius: 30px;
+    width: 95%;
+}
+
+.images img {
+    height: 95%;
+    width: 17.2%;
+    margin: 0% 1.5%;
+    border-radius: 15px;
+}
+
+.colombiaft {
+    width: 100%;
+    height: 55px;
+}
+  
+.eye{
+    margin: 1.25% 0.5%;
+    padding: 0.2% 0.1%;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    transform: translateX(-140%);
+  }
+.eye:hover{
+    background-color: #f0eded;
+}
+
+/* Estilos para Webkit (Chrome, Safari, Opera) */
+.dash_middle-div::-webkit-scrollbar {
+    width: 5px;
+}
+
+.searchBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100cv;
+    height: 100%;
+}
+.searchBox input{
+    border-radius: 10px;
+    padding: 2.5% 1.5%;
+    background-color: #8ECAFF;
+    border:1px solid #FFF9D0;
+    margin-left: 30%;
+    width: 400px;
+}
+
+.searchBox img{
+    transform: translateX(-140%);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Color de fondo de la pista de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Color del indicador de desplazamiento */
+    border-radius: 5px;
+    /* Radio de borde del indicador de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Color del indicador de desplazamiento al pasar el mouse */
+}

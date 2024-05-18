@@ -1,0 +1,53 @@
+/* index.css */
+
+.navBar_Nav{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    padding: 1%;
+    background-color:  #5AB2FF;
+    font-family: 'Tahoma', Arial, sans-serif;
+    font-size: 95%;
+    font-style: inherit;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 0.5%;
+}
+
+.navBar_Nav span{
+    font-family: 'Georgia', Arial, sans-serif;
+    font-size: 195%;
+    font-weight: bold;
+}
+
+.navBar_Nav ul li {
+    height: 100%;
+    border-radius: 5px;
+    border: 2px solid white; 
+    background-color: #5AB2FF;
+    display: inline-block;
+    margin: 0 5px; 
+    line-height: 25px; 
+    padding: 0 10px;
+}
+
+.navBar_Nav ul li a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.navBar_Nav ul li:hover {
+    background-color: white; 
+}
+
+.navBar_Nav ul li:hover a {
+    color: #5AB2FF; 
+}
+ul li a.active {
+    color: white;
+}
+
+.navBar_Navdiv{
+    flex-basis: 50%;
+    margin-left: 55%;
+}
