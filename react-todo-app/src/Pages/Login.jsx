@@ -18,9 +18,10 @@ const Login = () => {
 
   const handleSumbitEvent = (e) => {
     e.preventDefault();
+    console.log(input.username+', '+input.password)
     if (input.username !== "" && input.password !== "") {
       try {
-        auth.loginAction(input);
+        auth.login(input.username, input.password);
       } catch (error) {
         setMesaje(error.message);
       }

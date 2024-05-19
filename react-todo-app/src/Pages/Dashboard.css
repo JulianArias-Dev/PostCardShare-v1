@@ -137,23 +137,29 @@
     align-items: center;
 }
 
+.new_name label{
+    width: 25%;
+}
+
 .new_name img {
     width: 7%;
     height: 95%;
     cursor: pointer;
 }
 
-.logout {
-    width: 100cv;
+.log-out {
+    width: 20%;
     display: flex;
-    justify-content: center; 
+    justify-content: right; 
 }
 
-.logout img{
+.log-out img{
+    height: 70px;
+    width: 50px;
     padding: 0.5% 0.5%;
 }
 
-.logout img:hover {
+.log-out img:hover {
     background-color: #8ECAFF;
   }
 
@@ -230,7 +236,7 @@
     width: 65%;
     height: 100cv;
     /* Tamaño del div central */
-    background-color: #FFF9D0;
+    background-color: #fffdf2;
     overflow-y: auto;
     overflow-x: hidden;
     padding: 1%;
@@ -242,4 +248,24 @@
     color: #fff;
     text-align: center;
     padding: 0.1 0%;
+}
+
+.searchBox{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 60%;
+    height: 100%;
+}
+.searchBox input{
+    border-radius: 10px;
+    padding: 2.5% 1.5%;
+    background-color: #8ECAFF;
+    border:1px solid #FFF9D0;
+    margin-left: 5%;
+    width: 400px;
+}
+
+.searchBox img{
+    transform: translateX(-140%);
 }

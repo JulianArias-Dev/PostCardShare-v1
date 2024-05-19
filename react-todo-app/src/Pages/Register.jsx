@@ -1,44 +1,27 @@
 import { useState } from "react";
-import { useAuth } from "../Components/AuthProvider.jsx";
 import NavBar from "../Components/NavBar.jsx";
 import './singup.css';
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
 
     
-    const [input, setInput] = useState({
-        username: "",
-        password: "",
-    });
-    
-    const [mensaje, setMesaje] = useState("");
-    //*/
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [name, setName] = useState('');
+    const navigate = useNavigate();
 
-    const auth = useAuth();
-
-    const handleSumbitEvent = (e) => {
+    const handleRegister = (e) => {
         e.preventDefault();
-        if (input.username !== "" && input.password !== "") {
-            try {
-                auth.loginAction(input);
-            } catch (error) {
-                setMesaje(error.message);
-            }
-            return;
-        }
-        alert("El usuario y la contraseña deben ser obligatorios");
-    }
+        const users = JSON.parse(localStorage.getItem('users')) || [];
+        const newUser = { name, username, password };
+        users.push(newUser);
+        localStorage.setItem('users', JSON.stringify(users));
+        console.log('Usuario: '+newUser.username+', Contraseña: '+newUser.password);
+        navigate('/singin');
+      };
 
-    const handleInput = (e) => {
-        const { name, value } = e.target;
-        setInput((prev) => (
-            {
-                ...prev,
-                [name]: value,
-            }
-        ))
-    };
-    //*/
+    
 
     const [status, setStatus] = useState("view");
 
@@ -68,15 +51,11 @@ const Register = () => {
                     <span>PostCardShare</span>
                 </div>
                 <div className='contenedorFormulario'>
-                    <form onSubmit={handleSumbitEvent}>
+                    <form onSubmit={handleRegister}>
                         <div>
                             <span>Nombres</span><br />
                             <input
-                                type="text"
-                            ></input>
-                            <span>Apellidos</span><br />
-                            <input
-                                type="text"
+                                type="text" value={name} onChange={(e) => setName(e.target.value)}
                             ></input>
                             <span>Correo Electrónico</span><br />
                             <input
@@ -98,7 +77,8 @@ const Register = () => {
                                 name='username'
                                 aria-describedby='user-name'
                                 aria-invalid="false"
-                                onChange={handleInput}
+                                value={username} 
+                                onChange={(e) => setUsername(e.target.value)}
                             /><br />
 
                             <span>Contraseña</span><br />
@@ -108,7 +88,8 @@ const Register = () => {
                                 name="password"
                                 aria-describedby="user-password"
                                 aria-invalid="false"
-                                onChange={handleInput}
+                                value={password} 
+                                onChange={(e) => setPassword(e.target.value)}
                             />
                             <img
                                 className="eye"

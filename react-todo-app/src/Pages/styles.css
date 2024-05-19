@@ -186,26 +186,6 @@
     width: 5px;
 }
 
-.searchBox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100cv;
-    height: 100%;
-}
-.searchBox input{
-    border-radius: 10px;
-    padding: 2.5% 1.5%;
-    background-color: #8ECAFF;
-    border:1px solid #FFF9D0;
-    margin-left: 30%;
-    width: 400px;
-}
-
-.searchBox img{
-    transform: translateX(-140%);
-}
-
 ::-webkit-scrollbar {
     width: 10px;
     /* Ancho de la barra de desplazamiento */

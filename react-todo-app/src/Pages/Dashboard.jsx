@@ -10,7 +10,6 @@ import Anuncio2 from '../assets/Anuncios/Anuncio2.png';
 const Dashboard = () => {
 
   //const anunce = Anuncio1();
-
   return (
     <div>
       <HeadDashboard />
