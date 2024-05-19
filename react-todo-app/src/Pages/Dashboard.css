@@ -141,6 +141,11 @@
     width: 25%;
 }
 
+.new_name label:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .new_name img {
     width: 7%;
     height: 95%;
