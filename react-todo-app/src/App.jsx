@@ -1,3 +1,4 @@
+import Register from './Pages/Register';
 import { Route, Routes } from 'react-router-dom';
 import AuthProvider from './Components/AuthProvider';
 import PrivateRoute from './Components/PrivateRoute';
@@ -6,7 +7,6 @@ import Login from './Pages/Login';
 import Dashboard from './Pages/Dashboard';
 import HomePage from './Pages/HomePage';
 import Profile from './Pages/Profile';
-import Register from './Pages/Register';
 import OutWebSite from './Pages/Advertiser WebSite';
 
 function App() {

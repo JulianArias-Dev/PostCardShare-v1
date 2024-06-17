@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../Components/AuthProvider.jsx";
-import NavBar from "../Components/NavBar.jsx";
-import './styles.css';
+import './Register.css';
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -18,7 +17,7 @@ const Login = () => {
 
   const handleSumbitEvent = (e) => {
     e.preventDefault();
-    console.log(input.username+', '+input.password)
+    console.log(input.username + ', ' + input.password)
     if (input.username !== "" && input.password !== "") {
       try {
         auth.login(input.username, input.password);
@@ -58,57 +57,50 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <header>
-        <NavBar />
-      </header>
-      <div className='login_contenedorPrincipal'>
-        <div className='login_contenedorImagen'>*
-          <img src="src\assets\Logo-1.png" alt="Logo" />
-          <span>PostCardShare</span>
-        </div>
-        <div className='login_contenedorFormulario'>
-          <form onSubmit={handleSumbitEvent}>
-            <div>
-              <span className='login-span'>Correo electronico o Nombre de Usuario</span><br />
+    <div className='contenedorPrincipal'>
+      <div className='contenedorImagen'>
+        <img src="src\assets\Logo.png" alt="Logo" />
+        <span>PostCardShare</span>
+      </div>
+      <div className='contenedorFormulario'>
+        <form onSubmit={handleSumbitEvent}>
+          <h3>Iniciar Sesión</h3>
+          <p>Si no tiene una cuenta puede <span className="singuplink" onClick={() => navigate('/singup')}>Registrarse</span></p>
+          <br /><br /><br /><br />
+          <span>Correo electronico o Nombre de Usuario</span><br />
 
-              <input
-                className='login-input'
-                type="text"
-                id="user-name"
-                name='username'
-                aria-describedby='user-name'
-                aria-invalid="false"
-                onChange={handleInput}
-              /><br />
+          <input
+            type="text"
+            id="user-name"
+            name='username'
+            aria-describedby='user-name'
+            aria-invalid="false"
+            onChange={handleInput}
+          /><br />
 
-              <span className='login-span'>Contraseña</span><br />
+          <span>Contraseña</span><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            aria-describedby="user-password"
+            aria-invalid="false"
+            onChange={handleInput}
+          />
+          <img
+            className="eye"
+            id="btnVerContraseña"
+            src={status === "view" ? "src/assets/Login/view.png" : "src/assets/Login/hide.png"}
+            alt=""
+            onClick={verContraseña}
+          />
 
-              <input
-                className='login-input'
-                type="password"
-                id="password"
-                name="password"
-                aria-describedby="user-password"
-                aria-invalid="false"
-                onChange={handleInput}
-              />
-              <img
-                className="eye"
-                id="btnVerContraseña"
-                src={status === "view" ? "src/assets/Login/view.png" : "src/assets/Login/hide.png"}
-                alt=""
-                onClick={verContraseña}
-              />
+          <span className="spamMessage">{mensaje}</span>
+          <button className='boton' type='submit'> Iniciar Sesión</button>
 
-              <span className="spamMessage">{mensaje}</span>
-              <button className='login_boton' type='submit' style={{ marginTop: '5%' }}> Iniciar Sesión</button>
-              <br /><span className="singuplink" onClick={() => navigate('/singup')}>Registrarse</span>
-            </div>
-          </form>
-        </div>
-      </div >
-    </div>
+        </form>
+      </div>
+    </div >
   );
 }
 

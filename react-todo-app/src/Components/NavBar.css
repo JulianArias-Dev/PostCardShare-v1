@@ -5,13 +5,14 @@
     justify-content: space-between;
     height: 45px;
     padding: 1%;
-    background-color:  #5AB2FF;
+    background-color:  #005187;
     font-family: 'Tahoma', Arial, sans-serif;
     font-size: 95%;
     font-style: inherit;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     margin-bottom: 0.5%;
+    color: white;
 }
 
 .navBar_Nav span{
@@ -20,11 +21,17 @@
     font-weight: bold;
 }
 
+.logodiv{
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
 .navBar_Nav ul li {
     height: 100%;
     border-radius: 5px;
     border: 2px solid white; 
-    background-color: #5AB2FF;
+    background-color: #005187;
     display: inline-block;
     margin: 0 5px; 
     line-height: 25px; 
@@ -49,5 +56,5 @@ ul li a.active {
 
 .navBar_Navdiv{
     flex-basis: 50%;
-    margin-left: 55%;
+    margin-left: 45%;
 }

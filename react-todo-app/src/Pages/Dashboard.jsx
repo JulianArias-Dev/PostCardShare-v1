@@ -5,6 +5,7 @@ import './Dashboard.css';
 import Anuncio from '../Components/Anuncio.jsx';
 import Anuncio1 from '../assets/Anuncios/Anuncio1.png';
 import Anuncio2 from '../assets/Anuncios/Anuncio2.png';
+import NewPost from '../Components/NewPost.jsx';
 
 
 const Dashboard = () => {
@@ -13,7 +14,6 @@ const Dashboard = () => {
   return (
     <div>
       <HeadDashboard />
-
       <div className="dash_content">
         <div className="dash_left-div">
           <h4>Usuarios Activos</h4>
@@ -26,6 +26,7 @@ const Dashboard = () => {
 
         <div className="dash_middle-div">
           <h3>Publicaciones</h3>
+          <NewPost/>
           <Publicacion like={getRandomNumber()} dislike={getRandomNumber()} />
           <Publicacion like={getRandomNumber()} dislike={getRandomNumber()} />
           <Publicacion like={getRandomNumber()} dislike={getRandomNumber()} />

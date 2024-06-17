@@ -8,8 +8,9 @@ const NavBar = () => {
     <>
       {
         <nav className='navBar_Nav'>
-          <div>
-            <span>PostCardShare.com</span>
+          <div className='logodiv'>
+          <img style={{width:'70px', height:'70px'}} src="src\assets\Logo.png" alt="Logo" />
+            <span>  PostCardShare.com</span>
           </div>
           <div className='navBar_Navdiv'>
             <ul>
