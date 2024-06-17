@@ -1,0 +1,63 @@
+.dialogReport {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    max-width: 500px;
+}
+
+.dialog-header {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #005187;
+}
+
+.dialog-body {
+    margin-bottom: 20px;
+}
+
+.dialog-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.reportForm div{
+    flex-basis: 50%;
+    padding: 2% 5%;
+    margin: 1%;
+}
+
+textarea {
+    width: 95%;
+    height: 100cv;
+    padding: 2%;
+    border-radius: 5px;
+    border:2px solid #005187;
+    margin-top: 0.5%;
+}
+
+.dots{
+    width: 2%;
+}
+
+.button {
+    background-color: #005187;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button.cancel {
+    background-color: #f44336;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.button.cancel:hover {
+    background-color: #e53935;
+}

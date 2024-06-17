@@ -41,7 +41,7 @@
 .userabout div span {
     font-size: 120%;
 }
-
+/*Publicaciones*/
 .publicaciones {
     width: 97%;
     padding: 0.5%;
@@ -54,8 +54,7 @@
     margin: 2%;
     display: flex;
     justify-content: left;
-    border: 2px solid #000;
-    border-radius: 10px;
+    border-bottom: 1px solid #000;
     width: 95%;
 }
 
@@ -84,8 +83,8 @@
 }
 
 .photo {
-    height: 40%;
-    width: 10%;
+    height: 60%;
+    width: 20%;
 }
 
 .like {
@@ -100,10 +99,10 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 50px;
-    border-bottom: 2px solid #FFF9D0;
+    height: 7%;
     border-radius: 5px;
-    width: 90%;
+    border-bottom:1px solid #005187;
+    width: 95%;
 }
 
 .activeuser img{
@@ -124,21 +123,28 @@
   /*styles dashboard*/
 .dash_header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: baseline;
-    padding: 3px;
-    background-color: #5AB2FF;
-    color: #fff;
+    padding: 0.5% 1%;
+    background-color: #fff;
     width: 99.85%;
 }
 
 .new_name {
+    margin-left: 5%;
     display: flex;
     align-items: center;
+    color: #005187;
+    font-size: 120%;
+    font-weight: bold;
+    width: 80%;
+    border-radius: 5px;
+    border-bottom:2px solid  #005187;
 }
 
 .new_name label{
     width: 25%;
+    color: #005187;
 }
 
 .new_name label:hover{
@@ -146,7 +152,7 @@
     cursor: pointer;
 }
 
-.new_name img {
+.imagenperfil {
     width: 7%;
     height: 95%;
     cursor: pointer;
@@ -159,8 +165,8 @@
 }
 
 .log-out img{
-    height: 70px;
-    width: 50px;
+    height: 50px;
+    width: 40px;
     padding: 0.5% 0.5%;
 }
 
@@ -211,12 +217,15 @@
     display: flex;
     width: 17%;
     /* Tamaño de los divs laterales */
-    background-color: #A0DEFF;
+    background-color: #fff;
     margin-right: 0.1%;
     height: 100%;
     padding-left: 0.5%;
     justify-content: left;
     flex-direction: column;
+    padding-left: 4%;
+    padding-right: 1%;
+    margin: 0.1% 0.1%;
 }
 
 .dash_left-div h4{
@@ -230,26 +239,29 @@
     width: 18%;
     /* Tamaño de los divs laterales */
     border-radius: 2px;
-    background-color: #a0deff4f;
-    margin-right: 0%;
-    margin-left: 0.1%;
-    height: 100%;
+    background-color: #fff;
+    padding: 1% 4%;
+    margin: 0.1% 0.1%;
+    height: 100cv;
     justify-content: center;
+    padding-left: 2%;
+    padding-right: 3%;
 }
 
 .dash_middle-div {
     width: 65%;
     height: 100cv;
     /* Tamaño del div central */
-    background-color: #fffdf2;
+    background-color: #fff;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 1%;
+    padding: 1% 4%;
+    margin: 0.1% 0.1%;
 }
 
 .dash_footer {
     height: 30px;
-    background-color: #5AB2FF;
+    background-color: #005187;
     color: #fff;
     text-align: center;
     padding: 0.1 0%;
@@ -265,12 +277,14 @@
 .searchBox input{
     border-radius: 10px;
     padding: 2.5% 1.5%;
-    background-color: #8ECAFF;
-    border:1px solid #FFF9D0;
+    background-color: #fff;
+    border:1px solid #005187;
     margin-left: 5%;
     width: 400px;
 }
 
-.searchBox img{
+.lupa{
+    width: 5%;
+    height: 5%;
     transform: translateX(-140%);
 }

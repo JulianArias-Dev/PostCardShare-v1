@@ -10,7 +10,7 @@ const HeadDashboard = () => {
       <header className='dash_header'>
         <nav className='dash_nav'>
           <div className="new_name">
-            <img src="src/assets/user (1).png" alt="perfil" onClick={() => navigate('/Perfil')} />
+            <img className="imagenperfil" src="src/assets/user (1).png" alt="perfil" onClick={() => navigate('/Perfil')} />
             <label onClick={() => navigate('/Perfil')}>{user?.name}</label> {/* Usa optional chaining por si user es null */}
             
             <div className='searchBox'>

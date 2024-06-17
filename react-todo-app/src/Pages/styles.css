@@ -1,109 +1,3 @@
-/*styles login*/
-.login_contenedorPrincipal {
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid #000;
-    border-radius: 2%;
-    padding: 0.2%;
-    margin: 2%;
-    margin-left: 18%;
-    height: 450px;
-    width: 60%;
-}
-
-.login_contenedorImagen {
-    padding: 5%;
-    background-color: #5AB2FF;
-    flex-basis: 35%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.login_contenedorImagen span {
-    margin-left: 5%;
-    font-family: 'Georgia', Arial, sans-serif;
-    font-size: 35px;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.login_contenedorImagen img {
-    width: 70%;
-    height: 70%;
-    margin-top: 10%;
-    margin-left: 15%;
-    border-radius: 60%;
-}
-
-.login_contenedorFormulario {
-    flex-basis: 64%;
-    margin-left: 0%;
-    border-radius: 3%;
-}
-
-.login_contenedorFormulario form{
-    padding: 15%;
-    height: 100cv;
-}
-
-.singuplink{
-    text-decoration: none;
-    color: #5AB2FF;
-    margin: 35%;
-}
-
-.singuplink:hover{
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.login_boton {
-    margin-left: 8%;
-    height: 8%;
-    width: 80%;
-    padding: 4% 5%;
-    background-color: white;
-    color: black;
-    font-family: 'Tahoma', Arial, sans-serif;
-    font-size: 85%;
-    font-style: inherit;
-    border: 1px solid #000;
-    border-radius: 20px;
-}
-
-.login_boton:hover {
-    cursor: pointer;
-    background-color: #5AB2FF;
-    color: white;
-}
-
-.login-span {
-    font-family: 'Tahoma', Arial, sans-serif;
-    font-size: 90%;
-    font-style: inherit;
-}
-
-.spamMessage{   
-    font-size: 90%;
-    padding-left: 23%;
-    margin-bottom: 0%;
-    color: red;
-    text-decoration: underline  ;
-}
-
-.login-input {
-    font-family: 'Tahoma', Arial, sans-serif;
-    font-size: small;
-    width: 90%;
-    padding: 2.5% 2%;
-    margin-top: 5%;
-    margin-bottom: 10%;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid #5AB2FF;
-}
-
 /*styles homepage*/
 .homepage {
     justify-content: center;
@@ -122,7 +16,7 @@
     justify-content: flex-start;
     /* Alinea el contenido arriba */
     height: 750px;
-    background-color: #FFF9D0;
+    background-color: #e9f2ff;
     padding: 5%;
 }
 
@@ -169,18 +63,6 @@
     height: 55px;
 }
   
-.eye{
-    margin: 1.25% 0.5%;
-    padding: 0.2% 0.1%;
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    transform: translateX(-140%);
-  }
-.eye:hover{
-    background-color: #f0eded;
-}
-
 /* Estilos para Webkit (Chrome, Safari, Opera) */
 .dash_middle-div::-webkit-scrollbar {
     width: 5px;

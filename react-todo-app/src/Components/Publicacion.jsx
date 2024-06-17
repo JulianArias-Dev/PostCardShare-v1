@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
-
+import '../Pages/Dashboard.css'
+import Reportar from "./Reportar";
 
 const Publicacion = ({ like, dislike }) => {
 
@@ -9,7 +10,12 @@ const Publicacion = ({ like, dislike }) => {
         <div className="publicacion">
             <img className="photo" src="src\assets\Publications\postcard.png" alt="imagen" />
             <div>
-                <h4 onClick={() => navigate('/Perfil')} >Usuario</h4>
+                <div>
+                    <label onClick={() => navigate('/Perfil')} >Usuario</label>
+                    <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                        <Reportar />
+                    </div>
+                </div>
                 <img className="star" src="src\assets\Publications\filledstar.png" alt="" />
                 <img className="star" src="src\assets\Publications\filledstar.png" alt="" />
                 <img className="star" src="src\assets\Publications\filledstar.png" alt="" />
